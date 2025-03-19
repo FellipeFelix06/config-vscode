@@ -11,6 +11,8 @@
     "editor.codeActionsOnSave": {
         "source.fixAll": true
       },
+    "terminal.integrated.zoom": 1,
+    "terminal.integrated.scrollWheelZoom": true,
     // "editor.defaultFormatter": "GitHub.copilot",
     "editor.renderWhitespace": "all",
     "code-runner.clearPreviousOutput": true,
