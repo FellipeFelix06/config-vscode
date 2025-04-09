@@ -1,41 +1,14 @@
 {
-  "editor.fontSize": 14,
-  "editor.lineHeight": 1.8,
-  "editor.fontFamily": "SF Mono, Menlo, Monaco, 'Courier New', monospace",
-  "editor.rulers": [],
+  "editor.fontFamily": "Menlo, Monaco, Consolas, 'Courier New', monospace",
   "editor.fontLigatures": true,
+  "editor.fontSize": 14,
+  "editor.lineHeight": 1.6,
+  "editor.rulers": [],
   "workbench.editor.labelFormat": "short",
   "editor.semanticHighlighting.enabled": false,
   "editor.minimap.enabled": false,
   "workbench.statusBar.visible": true,
   "explorer.compactFolders": false,
-  "apc.electron": {
-    "titleBarStyle": "hiddenInset",
-    "trafficLightPosition": {
-      "x": 11,
-      "y": 10
-    },
-    "opacity": 1,
-    "vibrancy": "dark",
-    "frame": false
-  },
-  "apc.listRow": {
-    "height": 24
-  },
-  "apc.header": {
-    "height": 36
-  },
-  "apc.font.family": "Inter",
-  "apc.stylesheet": {
-    ".title-label > h2": "display: none",
-    ".editor-actions": "display: none",
-    ".nosidebar .inline-tabs-placeholder": "width: 75px",
-    ".pane-header": "padding: 0 8px",
-    ".pane-body": "padding: 8px",
-    ".split-view-view:first-child .pane-header": "display: none !important;",
-    ".monaco-list-row": "border-radius: 4px;",
-    ".monaco-workbench .monaco-list:not(.element-focused):focus:before": "display: none;"
-  },
   "window.commandCenter": false,
   "workbench.layoutControl.enabled": false,
   "explorer.sortOrder": "foldersNestsFiles",
@@ -48,39 +21,22 @@
     ".env.local": ".env*",
     ".env": ".env*"
   },
-  "editor.guides.indentation": false,
-  "terminal.integrated.fontFamily": "",
+  "terminal.integrated.fontFamily": "SF Mono",
   "terminal.integrated.defaultProfile.windows": "Git Bash",
-  "rapidapi.terminalLink.enabled": false,
   "editor.formatOnSave": true,
   "terminal.integrated.env.windows": {},
   "terminal.integrated.env.osx": {},
-  "console-ninja.allowConsoleLogToTriggerPredictions": true,
   "javascript.updateImportsOnFileMove.enabled": "always",
-  "console-ninja.featureSet": "Community",
   "explorer.confirmDragAndDrop": false,
   "terminal.integrated.enableVisualBell": true,
-  "discloud.app.sort.online": true,
   "workbench.sideBar.location": "left",
   "symbols.hidesExplorerArrows": false,
-  "winopacity.opacity": 253,
   "typescript.updateImportsOnFileMove.enabled": "always",
   "security.workspace.trust.untrustedFiles": "open",
   "workbench.editorLargeFileConfirmation": 90000000,
   "workbench.iconTheme": "material-icon-theme",
   "editor.mouseWheelZoom": true,
-  "chat.editing.alwaysSaveWithGeneratedChanges": true,
-  "keyboard.touchbar.ignored": [
-    ""
-  ],
-  "nasc-touchbar.addCursorBelow": false,
-  "nasc-touchbar.blockComment": true,
-  "nasc-touchbar.commentLine": true,
-  "nasc-touchbar.docs": true,
-  "nasc-touchbar.goToDefinition": false,
-  "nasc-touchbar.showCommands": false,
   "python.experiments.optOutFrom": [],
-  "gitlens.views.searchAndCompare.files.layout": "list",
   "terminal.integrated.profiles.osx": {
     "bash": {
       "path": "bash",
@@ -178,18 +134,29 @@
     "pkl": "clear && cd $dir && pkl eval -f yaml $fileName -o $fileNameWithoutExt.yaml",
     "gleam": "clear && gleam run -m $fileNameWithoutExt"
   },
+  "git.enableSmartCommit": true,
+  "git.confirmSync": false,
+  "window.titleBarStyle": "custom",
   "editor.tokenColorCustomizations": {
     "textMateRules": [
       {
-        "scope": "comment",
+        "scope": [
+          "variable.parameter"
+        ],
         "settings": {
           "fontStyle": "italic"
         }
       },
       {
-        "scope": "keyword",
+        "scope": [
+          "comment",
+          "keyword",
+          "storage",
+          "entity.name.tag",
+          "variable"
+        ],
         "settings": {
-          "fontStyle": "italic"
+          "fontStyle": ""
         }
       }
     ]
