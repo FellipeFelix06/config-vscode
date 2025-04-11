@@ -1,164 +1,93 @@
 {
-  "editor.fontFamily": "Menlo, Monaco, Consolas, 'Courier New', monospace",
-  "editor.fontLigatures": true,
-  "editor.fontSize": 14,
-  "editor.lineHeight": 1.6,
-  "editor.rulers": [],
-  "workbench.editor.labelFormat": "short",
-  "editor.semanticHighlighting.enabled": false,
-  "editor.minimap.enabled": false,
-  "workbench.statusBar.visible": true,
+  "window.zoomLevel": 2,
+  "editor.fontSize": 26,
+  "editor.hover.enabled": true,
+  "workbench.startupEditor": "none",
   "explorer.compactFolders": false,
-  "window.commandCenter": false,
-  "workbench.layoutControl.enabled": false,
-  "explorer.sortOrder": "foldersNestsFiles",
-  "editor.renderWhitespace": "all",
-  "explorer.fileNesting.enabled": true,
-  "explorer.fileNesting.patterns": {
-    "package.json": ".eslint*, prettier*, tsconfig*,jsconfig*, vite*, pnpm-*, bun.lockb, nest*, package-lock*",
-    "tailwind.config.*": "tailwind.config*, postcss.config*",
-    ".gitignore": ".gitattributes, .gitmodules, .gitmessage, .mailmap, .git-blame*",
-    ".env.local": ".env*",
-    ".env": ".env*"
-  },
-  "terminal.integrated.fontFamily": "SF Mono",
-  "terminal.integrated.defaultProfile.windows": "Git Bash",
-  "editor.formatOnSave": true,
-  "terminal.integrated.env.windows": {},
-  "terminal.integrated.env.osx": {},
-  "javascript.updateImportsOnFileMove.enabled": "always",
-  "explorer.confirmDragAndDrop": false,
-  "terminal.integrated.enableVisualBell": true,
-  "workbench.sideBar.location": "left",
-  "symbols.hidesExplorerArrows": false,
-  "typescript.updateImportsOnFileMove.enabled": "always",
-  "security.workspace.trust.untrustedFiles": "open",
-  "workbench.editorLargeFileConfirmation": 90000000,
+  "terminal.integrated.fontSize": 24,
+  "editor.rulers": [
+    80,
+    120
+  ],
   "workbench.iconTheme": "material-icon-theme",
-  "editor.mouseWheelZoom": true,
-  "python.experiments.optOutFrom": [],
-  "terminal.integrated.profiles.osx": {
-    "bash": {
-      "path": "bash",
-      "args": [
-        "-l"
-      ],
-      "icon": "terminal-bash"
-    },
-    "zsh": {
-      "path": "zsh",
-      "args": [
-        "-l"
-      ]
-    },
-    "fish": {
-      "path": "fish",
-      "args": [
-        "-l"
-      ]
-    },
-    "tmux": {
-      "path": "tmux",
-      "icon": "terminal-tmux"
-    },
-    "pwsh": {
-      "path": "pwsh",
-      "icon": "terminal-powershell"
-    },
-    "sh": {
-      "path": "/bin/sh"
-    }
-  },
-  "terminal.integrated.defaultProfile.osx": "zsh",
-  "workbench.editorAssociations": {
-    "*.copilotmd": "vscode.markdown.preview.editor",
-    "*.wasm": "default"
+  "code-runner.executorMap": {
+    "python": "clear ; python -u"
   },
   "code-runner.runInTerminal": true,
-  "code-runner.executorMap": {
-    "javascript": "clear && node",
-    "java": "clear && cd $dir && javac $fileName && java $fileNameWithoutExt",
-    "c": "clear && cd $dir && gcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
-    "zig": "clear && zig run",
-    "cpp": "clear && cd $dir && g++ $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
-    "objective-c": "clear && cd $dir && gcc -framework Cocoa $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
-    "php": "clear && php",
-    "python": "clear && python -u",
-    "perl": "clear && perl",
-    "perl6": "clear && perl6",
-    "ruby": "clear && ruby",
-    "go": "clear && go run",
-    "lua": "clear && lua",
-    "groovy": "clear && groovy",
-    "powershell": "clear && powershell -ExecutionPolicy ByPass -File",
-    "bat": "clear && cmd /c",
-    "shellscript": "clear && bash",
-    "fsharp": "clear && fsi",
-    "csharp": "clear && scriptcs",
-    "vbscript": "clear && cscript //Nologo",
-    "typescript": "clear && ts-node",
-    "coffeescript": "clear && coffee",
-    "scala": "clear && scala",
-    "swift": "clear && swift",
-    "julia": "clear && julia",
-    "crystal": "clear && crystal",
-    "ocaml": "clear && ocaml",
-    "r": "clear && Rscript",
-    "applescript": "clear && osascript",
-    "clojure": "clear && lein exec",
-    "haxe": "clear && haxe --cwd $dirWithoutTrailingSlash --run $fileNameWithoutExt",
-    "rust": "clear && cd $dir && rustc $fileName && $dir$fileNameWithoutExt",
-    "racket": "clear && racket",
-    "scheme": "clear && csi -script",
-    "ahk": "clear && autohotkey",
-    "autoit": "clear && autoit3",
-    "dart": "clear && dart",
-    "pascal": "clear && cd $dir && fpc $fileName && $dir$fileNameWithoutExt",
-    "d": "clear && cd $dir && dmd $fileName && $dir$fileNameWithoutExt",
-    "haskell": "clear && runghc",
-    "nim": "clear && nim compile --verbosity:0 --hints:off --run",
-    "lisp": "clear && sbcl --script",
-    "kit": "clear && kitc --run",
-    "v": "clear && v run",
-    "sass": "clear && sass --style expanded",
-    "scss": "clear && scss --style expanded",
-    "less": "clear && cd $dir && lessc $fileName $fileNameWithoutExt.css",
-    "FortranFreeForm": "clear && cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
-    "fortran-modern": "clear && cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
-    "fortran_fixed-form": "clear && cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
-    "fortran": "clear && cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
-    "sml": "clear && cd $dir && sml $fileName",
-    "mojo": "clear && mojo run",
-    "erlang": "clear && escript",
-    "spwn": "clear && spwn build",
-    "pkl": "clear && cd $dir && pkl eval -f yaml $fileName -o $fileNameWithoutExt.yaml",
-    "gleam": "clear && gleam run -m $fileNameWithoutExt"
+  "code-runner.ignoreSelection": true,
+  "editor.fontFamily": "Consolas, 'Dank Mono', 'Source Code Pro', 'Fira Code', Menlo, 'Inconsolata', 'Droid Sans Mono', 'DejaVu Sans Mono', 'Ubuntu Mono', 'Courier New', Courier, Monaco, monospace",
+  "terminal.integrated.fontFamily": "",
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.python",
+    "editor.tabSize": 4,
+    "editor.insertSpaces": true,
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.fixAll": "explicit",
+      "source.fixAll.unusedImports": "explicit",
+      "source.organizeImports": "explicit"
+    }
   },
-  "git.enableSmartCommit": true,
-  "git.confirmSync": false,
-  "window.titleBarStyle": "custom",
+  "python.languageServer": "Pylance",
+  "python.formatting.autopep8Args": [
+    "--indent-size=4",
+    "--max-line-length=80"
+    // "--ignore=E111"
+  ],
+  "python.linting.flake8Args": [
+    // "--ignore=E111",
+  ],
+  "editor.formatOnSave": true,
+  "python.linting.flake8Enabled": true,
+  "python.linting.mypyEnabled": true,
+  "python.testing.unittestEnabled": false,
+  "python.testing.pytestEnabled": true,
+  "python.analysis.diagnosticSeverityOverrides": {},
+  // "python.defaultInterpreterPath": "./venv/bin/python",
+  "python.analysis.typeCheckingMode": "standard",
+  "cSpell.enabled": false,
+  "editor.renderWhitespace": "all",
+  "editor.mouseWheelZoom": true,
   "editor.tokenColorCustomizations": {
     "textMateRules": [
       {
-        "scope": [
-          "variable.parameter"
-        ],
+        "scope": "entity.name.function",
         "settings": {
           "fontStyle": "italic"
         }
       },
       {
-        "scope": [
-          "comment",
-          "keyword",
-          "storage",
-          "entity.name.tag",
-          "variable"
-        ],
+        "scope": "entity.name.type.class",
         "settings": {
-          "fontStyle": ""
+          "fontStyle": "bold"
+        }
+      },
+      {
+        "scope": "keyword.control",
+        "settings": {
+          "fontStyle": "italic"
+        }
+      },
+      {
+        "scope": "variable.parameter",
+        "settings": {
+          "fontStyle": "italic"
+        }
+      },
+      {
+        "scope": "variable.language.self",
+        "settings": {
+          "fontStyle": "italic"
+        }
+      },
+      {
+        "scope": "variable.other.property",
+        "settings": {
+          "fontStyle": "italic"
         }
       }
     ]
-  }
+  },
+  "git.enableSmartCommit": true,
+  "git.confirmSync": false
 }
