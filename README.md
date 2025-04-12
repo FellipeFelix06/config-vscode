@@ -6,5 +6,6 @@ Add-Content $PROFILE "`nSet-Alias clear cls"
 ```
 > cls -> clear win10
 
-clear; oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\star.omp.json" | Invoke-Expression
+```clear; oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\star.omp.json" | Invoke-Expression``` > set theme in notepad $PROFILE
 
+```winget install JanDeDobbeleer.OhMyPosh -s winget``` > install oh my posh
