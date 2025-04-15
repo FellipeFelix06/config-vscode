@@ -29,12 +29,6 @@
           "type": "git"
         },
         {
-          "type": "venv",
-          "style": "plain",
-          "foreground": "#FFD43B",
-          "template": "<#ffffff>via</> 🐍 {{ .Name }} "
-        },
-        {
           "type": "python",
           "style": "plain",
           "foreground": "#FFD43B",
@@ -43,7 +37,27 @@
             "fetch_version": true,
             "display_virtual_env": false
           },
-          "template": "🐍 {{ .Version }} "
+          "template": "<#ffffff>via</> 🐍 {{ .Version }} <#ffffff>via</> {{ .Name }}"
+        },
+        {
+          "type": "npm",
+          "style": "plain",
+          "foreground": "#FFD43B",
+          "properties": {
+            "display_mode": "context",
+            "fetch_version": true,
+            "display_virtual_env": false
+          }
+        },
+        {
+          "type": "node",
+          "style": "plain",
+          "foreground": "#FFD43B",
+          "properties": {
+            "display_mode": "context",
+            "fetch_version": true,
+            "display_virtual_env": false
+          }
         },
         {
           "foreground": "#C94A16",
