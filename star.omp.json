@@ -35,9 +35,10 @@
           "properties": {
             "display_mode": "context",
             "fetch_version": true,
-            "display_virtual_env": false
+            "display_virtual_env": false,
+            "folder_name_fallback": true
           },
-          "template": "<#ffffff>via</> 🐍 {{ .Version }} <#ffffff>via</> {{ .Name }}"
+          "template": "<#ffffff>via</> 🐍 {{ .Version }} <#ffffff>via</> {{ .Venv }}"
         },
         {
           "type": "npm",
