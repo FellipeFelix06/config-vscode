@@ -25,7 +25,7 @@
             "fetch_status": true
           },
           "style": "plain",
-          "template": "<#ffffff>on</> {{ .HEAD }} ",
+          "template": "<#ffffff>on</> {{ .HEAD | replace \"\" \" \" }}",
           "type": "git"
         },
         {
@@ -38,7 +38,7 @@
             "display_virtual_env": false,
             "folder_name_fallback": true
           },
-          "template": "<#ffffff>via</> 🐍 {{ .Version }} <#ffffff>via</> {{ .Venv }}"
+          "template": "<#ffffff>via</> {{ .Venv }} {{ .Version }}"
         },
         {
           "type": "npm",
@@ -54,11 +54,7 @@
           "type": "node",
           "style": "plain",
           "foreground": "#FFD43B",
-          "properties": {
-            "display_mode": "context",
-            "fetch_version": true,
-            "display_virtual_env": false
-          }
+          "template": "<#ffffff>via</> {{ .Version }}"
         },
         {
           "foreground": "#C94A16",
