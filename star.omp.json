@@ -25,7 +25,7 @@
             "fetch_status": true
           },
           "style": "plain",
-          "template": "<#ffffff>on</> {{ .HEAD | replace \"\" \" \" }}",
+          "template": "<#ffffff>on</> {{ .HEAD | replace \"\" \" \" }} <#FF0000>[?]</>",
           "type": "git"
         },
         {
@@ -38,7 +38,7 @@
             "display_virtual_env": false,
             "folder_name_fallback": true
           },
-          "template": "<#ffffff>via</> {{ .Venv }} {{ .Version }}"
+          "template": "{{ if .Venv }} <#ffffff>via</> {{ .Venv }} {{ end }}"
         },
         {
           "type": "npm",
