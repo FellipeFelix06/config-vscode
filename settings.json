@@ -1,5 +1,5 @@
 {
-  "window.zoomLevel": 2,
+  "window.zoomLevel": 0,
   "editor.fontSize": 26,
   "editor.hover.enabled": true,
   "workbench.startupEditor": "none",
@@ -44,7 +44,7 @@
   "python.testing.pytestEnabled": true,
   "python.analysis.diagnosticSeverityOverrides": {},
   // "python.defaultInterpreterPath": "./venv/bin/python",
-  "python.analysis.typeCheckingMode": "standard",
+  "python.analysis.typeCheckingMode": "basic",
   "cSpell.enabled": false,
   "editor.renderWhitespace": "all",
   "editor.mouseWheelZoom": true,
@@ -89,5 +89,6 @@
     ]
   },
   "git.enableSmartCommit": true,
-  "git.confirmSync": false
+  "git.confirmSync": false,
+  "liveServer.settings.donotShowInfoMsg": true
 }
