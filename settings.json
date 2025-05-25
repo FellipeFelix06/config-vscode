@@ -28,7 +28,6 @@
       "source.organizeImports": "explicit"
     }
   },
-  "python.languageServer": "Pylance",
   "python.formatting.autopep8Args": [
     "--indent-size=4",
     "--max-line-length=80"
@@ -44,7 +43,6 @@
   "python.testing.pytestEnabled": true,
   "python.analysis.diagnosticSeverityOverrides": {},
   // "python.defaultInterpreterPath": "./venv/bin/python",
-  "python.analysis.typeCheckingMode": "basic",
   "cSpell.enabled": false,
   "editor.renderWhitespace": "all",
   "editor.mouseWheelZoom": true,
@@ -90,5 +88,8 @@
   },
   "git.enableSmartCommit": true,
   "git.confirmSync": false,
-  "liveServer.settings.donotShowInfoMsg": true
+  "liveServer.settings.donotShowInfoMsg": true,
+  "workbench.editor.empty.hint": "hidden",
+  "editor.wordWrap": "on",
+  "python.analysis.typeCheckingMode": "basic",
 }
