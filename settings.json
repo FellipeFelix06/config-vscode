@@ -10,11 +10,6 @@
     120
   ],
   "workbench.iconTheme": "material-icon-theme",
-  "code-runner.executorMap": {
-    "python": "clear ; python -u"
-  },
-  "code-runner.runInTerminal": true,
-  "code-runner.ignoreSelection": true,
   "editor.fontFamily": "Consolas, 'Dank Mono', 'Source Code Pro', 'Fira Code', Menlo, 'Inconsolata', 'Droid Sans Mono', 'DejaVu Sans Mono', 'Ubuntu Mono', 'Courier New', Courier, Monaco, monospace",
   "terminal.integrated.fontFamily": "",
   "[python]": {
@@ -28,22 +23,10 @@
       "source.organizeImports": "explicit"
     }
   },
-  "python.formatting.autopep8Args": [
-    "--indent-size=4",
-    "--max-line-length=80"
-    // "--ignore=E111"
-  ],
-  "python.linting.flake8Args": [
-    // "--ignore=E111",
-  ],
   "editor.formatOnSave": true,
-  "python.linting.flake8Enabled": true,
-  "python.linting.mypyEnabled": true,
   "python.testing.unittestEnabled": false,
   "python.testing.pytestEnabled": true,
   "python.analysis.diagnosticSeverityOverrides": {},
-  // "python.defaultInterpreterPath": "./venv/bin/python",
-  "cSpell.enabled": false,
   "editor.renderWhitespace": "all",
   "editor.mouseWheelZoom": true,
   "editor.tokenColorCustomizations": {
@@ -91,5 +74,5 @@
   "liveServer.settings.donotShowInfoMsg": true,
   "workbench.editor.empty.hint": "hidden",
   "editor.wordWrap": "on",
-  "python.analysis.typeCheckingMode": "basic",
+  "python.analysis.typeCheckingMode": "basic"
 }
